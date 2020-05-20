@@ -1,0 +1,957 @@
+html, body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  margin-left: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+}
+
+p {
+  color: #dddddd;
+}
+
+hr {
+  width: 10%;
+  border-style: dotted;
+  border-color: #bbb;
+  border-width: 7px;
+  border-bottom: 0;
+}
+
+input {
+  color: #fff;
+}
+
+/* Title */
+#title {
+  text-align: center;
+  background-image: url('http://getwallpapers.com/wallpaper/full/b/7/c/61385.jpg');
+  -webkit-clip-path: polygon(53% 0, 100% 0, 100% 82%, 50% 90%, 0% 82%, 0 0);
+  clip-path: polygon(53% 0, 100% 0, 100% 82%, 50% 90%, 0% 82%, 0 0);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  border: 0;
+  width: 100%;
+}
+
+#title .container-fluid {
+  padding: 3% 7% 15%;
+}
+
+.heading {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 7%;
+}
+
+.big-heading {
+  font-size: 5.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: left;
+  display: inline;
+  color: #fff;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.home-link {
+  text-decoration: underline;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+/* Buttons */
+.title-button {
+  margin: 3% 1%;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #9c5518;
+  border-color: #9c5518;
+}
+
+.title-button:hover {
+  background-color: #cf7500;
+  border-color: #cf7500;
+}
+
+.btn.btn-lg {
+  font-size: 1rem;
+}
+
+.calc-button {
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #9c5518;
+  border-color: #9c5518;
+  display: inline;
+}
+
+.calc-button:hover {
+  background-color: #cf7500;
+  border-color: #cf7500;
+}
+
+/* Calculator Section */
+#internals {
+  background-color: #fff;
+  width: 100%;
+  height: 800px;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.calc-card {
+  background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  width: 70%;
+  margin: auto;
+}
+
+.card-body {
+  font-size: 1.5rem;
+}
+
+.form-elegant .font-small {
+  font-size: 0.8rem;
+}
+
+.form-elegant .z-depth-1a {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+}
+
+/* Table */
+#int,
+#ends,
+#total,
+#grd,
+#grdp {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.result-table,
+th,
+td {
+  border-bottom: 0.1px solid #dddddd;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: left;
+  margin-right: 0;
+  padding: 20px 15px 5px;
+  margin: auto;
+}
+
+table th,
+td {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #5f6769;
+}
+.form-control{
+  color: #fff;
+}
+.result-card {
+  background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
+  width: 60%;
+  margin: auto;
+}
+
+.result-cardbody {
+  height: 450px;
+}
+
+/* Grading System */
+#grading {
+  padding: 100px 0;
+}
+
+.gradeSystem {
+  margin: auto;
+  padding: 20px;
+}
+
+.gp,
+.gr {
+  text-align: center;
+}
+
+/* Footer Section */
+#footer {
+  height: 200px;
+  background-color: #231903;
+  border: 0;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.footer-primary {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin: 0px 30px;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  margin: 0 20px;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: #e3b04b;
+}
+
+@media (max-width: 1390px) {
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 70px;
+    padding: 30px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    width: 100%;
+    height: 730px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    padding-top: 50px;
+    font-size: 4.5rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card {
+    margin: auto;
+    width: 90%;
+    margin: 20px 0 0 60px;
+  }
+
+  .result-card {
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  #int,
+  #ends,
+  #total,
+  #grd,
+  #grdp {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  #internals {
+    height: 750px;
+    padding: 5px;
+  }
+
+  .md-form .form-control {
+    padding: .1rem 0 .1rem 0;
+    margin: 0 0 .5rem 0;
+    font-size: 1rem;
+  }
+
+  .md-form {
+    margin: 30px 0;
+    margin-left: 50px;
+  }
+
+  .form-control {
+    display: block;
+    width: 90%;
+  }
+
+  .result-table,
+  th,
+  td {
+    padding: 20px 10px 1px;
+    margin: auto;
+  }
+
+  table th,
+  td {}
+
+  .result-cardbody {
+    margin: 20px;
+    height: 360px;
+  }
+
+  #grading {
+    padding: 70px 30px;
+  }
+
+  .footer-primary {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 990px) {
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 5px 0 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    width: 100%;
+    height: 700px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    padding-top: 50px;
+    font-size: 4.5rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card,
+  .result-card {
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .result-card {
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+  }
+
+  #internals {
+    height: 950px;
+    padding: 5px;
+  }
+
+  .md-form .form-control {
+    padding: .1rem 0 .1rem 0;
+    margin: 0 0 .5rem 0;
+    font-size: 1rem;
+  }
+
+  #int,
+  #ends,
+  #total,
+  #grd,
+  #grdp {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .md-form {
+    margin: 30px 0;
+    margin-left: 50px;
+  }
+
+  .form-control {
+    display: block;
+    width: 90%;
+  }
+
+  .result-table,
+  th,
+  td {
+    padding: 20px 10px 1px;
+    margin: auto;
+  }
+
+  table th,
+  td {}
+
+  .result-cardbody {
+    margin: 20px;
+    height: 360px;
+  }
+
+  #grading {
+    padding: 40px 30px;
+  }
+
+  .footer-primary {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 5px 0 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    width: 100%;
+    height: 600px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    padding-top: 20px;
+    font-size: 3.5rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card,
+  .result-card {
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .result-card {
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  #internals {
+    height: 980px;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .md-form .form-control {
+    padding: .1rem 0 .1rem 0;
+    margin: 0 0 .5rem 0;
+  }
+
+  .md-form {
+    margin: 20px 0;
+  }
+
+  .result-table,
+  th,
+  td {
+    padding: 20px 10px 1px;
+    margin: auto;
+  }
+
+  table th, td {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5f6769;
+  }
+
+  .result-cardbody {
+    height: 400px;
+  }
+
+  #grading {
+    padding: 40px 30px;
+  }
+
+  .footer-primary {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    width: 100%;
+    height: 500px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    font-size: 2.5rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 0;
+    margin: 7px 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card {
+    width: 70%;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .result-card {
+    margin-top: 20px;
+    font-size: 10px;
+    width: 70%;
+  }
+
+  table th, td {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5f6769;
+  }
+
+  #int,
+  #ends,
+  #total,
+  #grd,
+  #grdp {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  #internals {
+    height: 550px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .md-form .form-control {
+    padding: 5px 0 0;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .md-form {
+    margin: 7px 0 7px 0;
+  }
+
+  .result-table, th, td {
+    padding: 5px 1px;
+    margin: auto;
+  }
+
+  .result-cardbody {
+    height: 250px;
+  }
+
+  #grading {
+    padding: 10px 10px;
+  }
+
+  table td {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  #footer {
+    height: 100px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer-primary {
+    font-size: 10px;
+    padding: 0;
+    display: inline;
+    margin: 0;
+  }
+
+  #footer p,
+  .container-fluid {
+    margin: 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    width: 100%;
+    height: 500px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    font-size: 2rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  #internals {
+    height: 550px;
+    margin: 0;
+  }
+
+  .md-form .form-control {
+    padding: 5px 0 0;
+    margin-left: 0;
+    font-size: 10px;
+  }
+
+  .md-form {
+    margin: 7px 0 7px 0;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 0;
+    margin: 7px 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card {
+    width: 95%;
+    margin-top: 5px;
+  }
+
+  .result-card {
+    margin-top: 20px;
+    font-size: 10px;
+    width: 80%;
+  }
+
+  .result-table, th, td {
+    padding: 5px 1px;
+    margin: auto;
+  }
+
+  .result-cardbody {
+    height: 220px;
+  }
+
+  table th, td {
+    font-size: 10px;
+    font-weight: 400;
+    color: #5f6769;
+  }
+
+  #int,
+  #ends,
+  #total,
+  #grd,
+  #grdp {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  #grading {
+    padding: 10px 10px;
+  }
+
+  table td {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  #footer {
+    height: 100px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer-primary {
+    font-size: 10px;
+    padding: 0;
+    display: inline;
+    margin: 0;
+  }
+
+  #footer p,
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 236px) {
+  p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #title {
+    height: 450px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .big-heading {
+    padding-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .btn.btn-lg {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  #internals {
+    height: 550px;
+    margin-top: 0;
+  }
+
+  .md-form .form-control {
+    padding: 5px 0 0;
+    margin-left: 0;
+    font-size: 10px;
+  }
+
+  .md-form {
+    margin: 7px 0 7px 0;
+  }
+
+  .card-body {
+    font-size: 10px;
+    padding: 0;
+    margin: 7px 0;
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-elegant .font-small {
+    font-size: 10px;
+  }
+
+  .calc-card {
+    width: 95%;
+    margin-top: 5px;
+  }
+
+  .result-card {
+    margin-top: 20px;
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .result-table, th, td {
+    padding: 5px 1px;
+    margin: auto;
+  }
+
+  .result-cardbody {
+    height: 230px;
+  }
+
+  table th, td {
+    font-size: 10px;
+    font-weight: 400;
+    color: #5f6769;
+  }
+
+  #int,
+  #ends,
+  #total,
+  #grd,
+  #grdp {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  #grading {
+    padding: 10px 10px;
+  }
+
+  table td {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  #footer {
+    height: 100px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .footer-primary {
+    font-size: 10px;
+    padding: 0;
+    display: inline;
+    margin: 0;
+  }
+
+  #footer p,
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+}

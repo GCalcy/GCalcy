@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="2RrTa6DVjP4UN0S99jh-EwEXTvHyV9wMjsFLs7bfeh4" />
+  <meta name="title" content="GCalcy: All-in-one marks and grade calculator">
+  <meta name="description" content="Calculation made easy with this all-in-one calculator. Calculate your internal marks, your end-semester marks, the total marks you obtained, your grade and your grade point all at once using GCalcy.">
+  <meta name="keywords" content="Calculator, Grade Calculator, Internal Marks Calculator, End Semester Marks Calculator, Overall Marks Calculator">
+  <meta name="author" content="Sentibilin Kharkongor">
+  <meta name="image" content="https://www.canva.com/design/DAD8tMiNJ7s/DoFiNpgjE5SqwOgja0urUA/view?website#2">
+  <meta name="type" content="Calculator">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="2RrTa6DVjP4UN0S99jh-EwEXTvHyV9wMjsFLs7bfeh4" />
+  <title>GCalcy</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Raleway:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- bootstrap and jquery scripts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+
+  <!-- css stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">GCalcy</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link home-link" href="#title" style="color: #cf7500">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#internals">Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grading">Grading System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto: sentee25@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+      <div class="heading">
+        <h1 class="big-heading">Calculate with GCalcy.</h1>
+        <p>Calculation made easy with this ultimate all-in-one calculator. Calculate your internal marks, your end-semester marks, the total marks you obtained, your grade and your grade point all at once using GCalcy.</p>
+        <a href="#internals"><button type="button" class="btn btn-floating btn-lg title-button" style="color:white">Calculator</button></a>
+        <a href="#grading"><button type="button" class="btn btn-floating btn-lg title-button" style="color:white">Grading System</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="internals">
+
+    <!-- Calculator -->
+    <h1>GCalcy Calculator</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card calc-card">
+          <div class="card-body calc-media">
+            <div class="md-form">
+              <input type="number" id="Ct1" class="form-control" placeholder="Class Test I   (out of 40)">
+            </div>
+            <div class="md-form">
+              <input type="number" id="Ct2" class="form-control" placeholder="Class Test II   (Out of 40)">
+            </div>
+            <div class="md-form">
+              <input type="number" id="Asgt" class="form-control" placeholder="Assignment   (Out of 10)">
+            </div>
+            <div class="md-form">
+              <input type="number" id="Att" class="form-control" placeholder="Attendance  (Out of 5)">
+            </div>
+            <div class="md-form">
+              <input type="number" id="Nonf" class="form-control" placeholder="Non-formal   (Out of 5)">
+            </div>
+            <div class="md-form">
+              <input type="number" id="End" class="form-control" placeholder="End Semester   (Out of 100)">
+            </div>
+            <div class="text-center mb-3">
+              <button type="button" id="calcMarks" class="btn btn-lg calc-button" style="color:white" onclick="getInternals()">Calculate</button>
+              <button type="button" class="btn btn-lg calc-button" style="color:white" onclick="refreshPage()">New data</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="col-lg-6">
+        <div class="card result-card">
+          <div class="card-body result-cardbody">
+            <h2 style="color: #DDD">Results</h2>
+            <table class="result-table ">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Marks/Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Internals (out of 40)</th>
+                  <td id="int"></td>
+                </tr>
+                <tr>
+                  <th scope="row">End Semester (out of 60)</th>
+                  <td id="ends"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Total (out of 100)</th>
+                  <td id="total"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Grade</th>
+                  <td id="grd"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Grade Point</th>
+                  <td id="grdp"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <hr>
+  <!-- Grading System -->
+  <section id="grading">
+    <h2>Grading System</h2>
+    <table class="gradeSystem">
+      <thead>
+        <th>Marks (x) obtained (%)</th>
+        <th>Grade</th>
+        <th>Description</th>
+        <th>Grade Points</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>90 ≤ x ≤ 100</td>
+          <td class="gr">O</td>
+          <td>Outstanding</td>
+          <td class="gp">10</td>
+        </tr>
+        <tr>
+          <td>80 ≤ x ≤ 90</td>
+          <td class="gr">E</td>
+          <td>Excellent</td>
+          <td class="gp">9</td>
+        </tr>
+        <tr>
+          <td>70 ≤ x ≤ 80</td>
+          <td class="gr">A+</td>
+          <td>Very Good</td>
+          <td class="gp">8</td>
+        </tr>
+        <tr>
+          <td>60 ≤ x ≤ 70</td>
+          <td class="gr">A</td>
+          <td>Good</td>
+          <td class="gp">7</td>
+        </tr>
+        <tr>
+          <td>50 ≤ x ≤ 60</td>
+          <td class="gr">B</td>
+          <td>Average</td>
+          <td class="gp">6</td>
+        </tr>
+        <tr>
+          <td>40 ≤ x ≤ 50</td>
+          <td class="gr">C</td>
+          <td>Below Average</td>
+          <td class="gp">5</td>
+        </tr>
+        <tr>
+          <td>x < 40</td>
+          <td class="gr">F</td>
+          <td>Failed</td>
+          <td class="gp">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="container-fluid">
+      <div class="footer-primary">
+        <a class="footer-primary" href="#title">HOME</a>
+        <a class="footer-primary" href="#internals">CALCULATOR</a>
+        <a class="footer-primary" href="mailto: sentee25@gmail.com">CONTACT</a>
+      </div>
+      <p class="copyright">© 2020 Galcy. All Rights Reserved.</p>
+    </div>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
